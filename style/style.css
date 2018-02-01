@@ -1,16 +1,16 @@
-ul.nav {
+.nav {
 list-style-type: none;
 margin: 0;
-padding: 0;
+padding-right: 27px;
 overflow: hidden;
 background-color: white;
 }
 
-ul.nav li, ul.rightfooter li {
+nav li, .rightfooter li {
     float: right;
 }
 
-ul.leftfooter li {
+.leftfooter li {
     float: left;
 }
 
@@ -24,6 +24,11 @@ li a {
     padding: 8px;
     line-height: 40px;
     vertical-align: middle;
+}
+
+li a:hover {
+    text-decoration: underline;
+    color: #666;
 }
 
 img {
@@ -42,6 +47,19 @@ img {
     display: block;
     position: relative;
     top: 20px;
+    border: 1px solid rgba(0,0,0,0.08);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.16),0 0 0 0 rgba(0,0,0,0.08);
+    padding-left: 12px;
+    padding-right: 12px; 
+}
+
+#searchbar:hover{
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.16),0 0 0 0 rgba(0,0,0,0.08);
+}
+
+#searchbar:focus{
+    outline: none;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.16),0 0 0 0 rgba(0,0,0,0.08);
 }
 
 .buttons-parent {
@@ -53,7 +71,15 @@ img {
     display: inline block;
     height: 36px;
     width: 125.75px;
-    top: 40px;
+    top: 60px;
+    color: #757575;
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    margin: 5px;
 }
 
 .country {
@@ -64,12 +90,13 @@ img {
     color: rgba(0,0,0,0.54);
     background-color: rgb(242, 242, 242);
     line-height: 40px;
-    height: 20px;
+    height: 40px;
     display: block;
     position: fixed;
     bottom: 40px;
     width: 100%;
-    padding: 20px;
+    padding-left: 27px;
+    border-top: 1px solid #e4e4e4;
 }
 
 .footerbar {
@@ -78,7 +105,26 @@ img {
     bottom: 0;
     width: 100%;
     height: 40px;
-    line-height: 40px;
-    vertical-align: middle;
     display: block;
+    border-top: 1px solid #e4e4e4;
+    padding-left: 27px;
+}
+
+.leftfooter li a, .rightfooter li a {
+    font-family: Arial;
+    font-size: 13px;
+    text-decoration: none;
+    color: #666;
+    padding-right: 27px;
+    padding-left: 0px;
+    position: relative;
+    bottom: 8px;
+}
+
+.leftfooter li a:hover, .rightfooter li a:hover {
+    text-decoration: underline;
+}
+
+.rightfooter {
+    padding-right: 27px;
 }
